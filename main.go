@@ -17,7 +17,7 @@ func main() {
 
 func ignoreStaticPath(){
 	//
-
+     //请求url中没有api字段。
 	beego.InsertFilter("/",beego.BeforeRouter,TransparentStatic)
 	beego.InsertFilter("/*",beego.BeforeRouter,TransparentStatic)
 }

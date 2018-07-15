@@ -21,7 +21,7 @@ func (c *AreaController) GetArea() {
 
 	resp:=make(map[string]interface{})
 	//从 session  取数据
-
+	defer c.RetData(resp)
 
 
 	//在mysql拿到area的数据
@@ -31,17 +31,17 @@ func (c *AreaController) GetArea() {
 	if err!=nil{
 		beego.Error("for Read(&area) ERROR=",err)
 		//返回错误json包。
-		resp["errno"]=400
-		resp["errmsg"]="查询失败"
+		resp["errno"]=models.RECODE_DBERR
+		resp["errmsg"]=models.RecodeText(models.RECODE_DBERR)
 		c.RetData(resp)
 
 		return
 	}
 	beego.Info("查询到数据=",num)
-	resp["errno"]=0
-	resp["errmsg"]="OK"
+	resp["errno"]=models.RECODE_OK
+	resp["errmsg"]=models.RecodeText(models.RECODE_OK)
 	resp["data"]=&area
-	c.RetData(resp)
+
 
 
 
