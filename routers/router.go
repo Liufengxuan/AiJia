@@ -17,5 +17,5 @@ func init() {
 	beego.Router("/api/v1.0/users",&controllers.UserController{},"post:Reg")
 
 
-	//beego.Router("/api/v1.0/sessions",&controllers.SessionController{})
+	beego.Router("/api/v1.0/sessions",&controllers.SessionController{},"post:Login")
 }
