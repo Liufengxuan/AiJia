@@ -10,7 +10,9 @@ import (
 )
 
 func main() {
+
 	ignoreStaticPath()
+	//models.UploadByFilename("redis.conf")
 	beego.Run()
 
 }
@@ -18,6 +20,7 @@ func main() {
 func ignoreStaticPath(){
 	//
      //请求url中没有api字段。
+     beego.SetStaticPath("group1/M00/","fdfs/storage_data/data/")
 	beego.InsertFilter("/",beego.BeforeRouter,TransparentStatic)
 	beego.InsertFilter("/*",beego.BeforeRouter,TransparentStatic)
 }

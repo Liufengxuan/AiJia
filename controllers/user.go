@@ -6,6 +6,8 @@ import (
 
 	"github.com/astaxie/beego/orm"
 	"AiJia/models"
+	"path"
+	"github.com/weilaihui/fdfs_client"
 )
 
 type UserController struct {
@@ -49,6 +51,80 @@ func (this *UserController) Reg() {
 	beego.Info("mobile =",resp["mobile"])
 	beego.Info("password =",resp["password"])
 	beego.Info("sms_code =",resp["sms_code"])
+
+
+}
+
+
+
+
+func (this *UserController) Postavatar(){
+	 resp:=make(map[string]interface{})
+	 defer this.RetData(resp)
+	fData,fNamehead,fErr:=this.GetFile("avatar")
+	if fErr!=nil{
+		resp["errno"]=models.RECODE_SERVERERR
+		resp["errmsg"]="图片上传失败"
+	}
+	beego.Info("is ok") //-----------debug
+	//2 得到文件后缀
+	suffix:=path.Ext(fNamehead.Filename)//截取文件后缀名称//a.jpg.avi
+	fdfsClient,fdfsClientError:=fdfs_client.NewFdfsClient("conf/client.conf")
+	if fdfsClientError !=nil{
+		beego.Error("fdfs_client.NewFdfsClient  err=",fdfsClientError)
+		resp["errno"]=models.RECODE_SERVERERR
+		resp["errmsg"]="初始化FastDfs失败"
+		return
+	}
+	fileBuffer:=make([]byte,fNamehead.Size)
+	_,err1:=fData.Read(fileBuffer)
+	if err1!=nil{
+		resp["errno"]=models.RECODE_REQERR
+		resp["errmsg"]="图片没能上传成功1"
+		return
+	}
+	uploadResponse,err2:=fdfsClient.UploadByBuffer(fileBuffer,suffix[1:])
+	if err2!=nil{
+		resp["errno"]=models.RECODE_REQERR
+		resp["errmsg"]="图片没能上传成功2"
+		return
+	}
+	userId:=this.GetSession("user_id")
+	o:=orm.NewOrm()
+
+	user:=models.User{Id:userId.(int)}
+	err3:=o.Read(&user)
+	if err3!=nil{
+		resp["errno"]=models.RECODE_REQERR
+		resp["errmsg"]="图片没能上传成功3"
+		return
+	}
+
+	user.Avatar_url=uploadResponse.RemoteFileId
+	beego.Info("is ok0") //-----------debug
+
+	_,err4:=o.Update(&user)
+
+	if err4!=nil{
+		resp["errno"]=models.RECODE_REQERR
+		resp["errmsg"]="图片没能上传成功4"
+		beego.Info("is ok") //-----------debug
+
+		return
+	}
+
+	beego.Info("is ok0") //-----------debug
+
+	urlMap:=make(map[string]string)
+
+	urlMap["avatar_url"]="127.0.0.1:8080/"+uploadResponse.RemoteFileId
+	beego.Info(urlMap["data"]) //-----------debug
+
+	resp["errno"]=models.RECODE_OK
+	resp["errmsg"]="图片上传成功"
+	resp["data"]=urlMap
+
+
 
 
 }

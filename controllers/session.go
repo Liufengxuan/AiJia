@@ -33,7 +33,7 @@ func (this *SessionController) GetSessionData() {
 		resp["errno"]=models.RECODE_OK
 		resp["errmsg"]=models.RecodeText(models.RECODE_OK)
 		resp["data"]=user
-		this.DelSession("name")
+		//this.DelSession("name")
 	}
 
 
@@ -78,7 +78,7 @@ func (this *SessionController)Login(){
 
 	//添加Session
 	this.SetSession("name",user)
-
+ 	this.SetSession("user_id",user.Id)//id留存   取后不删。
 
 
 	//返回json数据。
