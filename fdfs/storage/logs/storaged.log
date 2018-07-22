@@ -1,4 +1,4 @@
-[2018-07-18 20:57:58] INFO - FastDFS v5.12, base_path=/home/Golang/src/AiJia/fdfs/storage, store_path_count=1, subdir_count_per_path=256, group_name=group1, run_by_group=, run_by_user=, connect_timeout=10s, network_timeout=60s, port=23000, bind_addr=192.168.1.100, client_bind=1, max_connections=1024, accept_threads=1, work_threads=4, disk_rw_separated=1, disk_reader_threads=1, disk_writer_threads=1, buff_size=256 KB, heart_beat_interval=30s, stat_report_interval=60s, tracker_server_count=1, sync_wait_msec=50ms, sync_interval=0ms, sync_start_time=00:00, sync_end_time=23:59, write_mark_file_freq=500, allow_ip_count=-1, file_distribute_path_mode=0, file_distribute_rotate_count=100, fsync_after_written_bytes=0, sync_log_buff_interval=10s, sync_binlog_buff_interval=10s, sync_stat_file_interval=300s, thread_stack_size=512 KB, upload_priority=10, if_alias_prefix=, check_file_duplicate=0, file_signature_method=hash, FDHT group count=0, FDHT server count=0, FDHT key_namespace=, FDHT keep_alive=0, HTTP server port=8888, domain name=, use_access_log=0, rotate_access_log=0, access_log_rotate_time=00:00, rotate_error_log=0, error_log_rotate_time=00:00, rotate_access_log_size=0, rotate_error_log_size=0, log_file_keep_days=0, file_sync_skip_invalid_record=0, use_connection_pool=0, g_connection_pool_max_idle_time=3600s
+[2018-07-21 22:39:17] INFO - FastDFS v5.12, base_path=/home/Golang/src/AiJia/fdfs/storage, store_path_count=1, subdir_count_per_path=256, group_name=group1, run_by_group=, run_by_user=, connect_timeout=10s, network_timeout=60s, port=23000, bind_addr=192.168.1.104, client_bind=1, max_connections=1024, accept_threads=1, work_threads=4, disk_rw_separated=1, disk_reader_threads=1, disk_writer_threads=1, buff_size=256 KB, heart_beat_interval=30s, stat_report_interval=60s, tracker_server_count=1, sync_wait_msec=50ms, sync_interval=0ms, sync_start_time=00:00, sync_end_time=23:59, write_mark_file_freq=500, allow_ip_count=-1, file_distribute_path_mode=0, file_distribute_rotate_count=100, fsync_after_written_bytes=0, sync_log_buff_interval=10s, sync_binlog_buff_interval=10s, sync_stat_file_interval=300s, thread_stack_size=512 KB, upload_priority=10, if_alias_prefix=, check_file_duplicate=0, file_signature_method=hash, FDHT group count=0, FDHT server count=0, FDHT key_namespace=, FDHT keep_alive=0, HTTP server port=8888, domain name=, use_access_log=0, rotate_access_log=0, access_log_rotate_time=00:00, rotate_error_log=0, error_log_rotate_time=00:00, rotate_access_log_size=0, rotate_error_log_size=0, log_file_keep_days=0, file_sync_skip_invalid_record=0, use_connection_pool=0, g_connection_pool_max_idle_time=3600s
 data path: /home/Golang/src/AiJia/fdfs/storage_data/data, mkdir sub dir...
 mkdir data path: 00 ...
 mkdir data path: 01 ...
@@ -257,454 +257,112 @@ mkdir data path: FD ...
 mkdir data path: FE ...
 mkdir data path: FF ...
 data path: /home/Golang/src/AiJia/fdfs/storage_data/data, mkdir sub dir done.
-[2018-07-18 20:58:00] INFO - file: storage_param_getter.c, line: 191, use_storage_id=0, id_type_in_filename=ip, storage_ip_changed_auto_adjust=1, store_path=0, reserved_storage_space=10.00%, use_trunk_file=0, slot_min_size=256, slot_max_size=16 MB, trunk_file_size=64 MB, trunk_create_file_advance=0, trunk_create_file_time_base=02:00, trunk_create_file_interval=86400, trunk_create_file_space_threshold=20 GB, trunk_init_check_occupying=0, trunk_init_reload_from_binlog=0, trunk_compress_binlog_min_interval=0, store_slave_file_use_link=0
-[2018-07-18 20:58:00] INFO - file: storage_func.c, line: 257, tracker_client_ip: 192.168.1.100, my_server_id_str: 192.168.1.100, g_server_id_in_filename: 1677830336
-[2018-07-18 20:58:00] INFO - file: tracker_client_thread.c, line: 310, successfully connect to tracker server 192.168.1.100:22122, as a tracker client, my ip is 192.168.1.100
-[2018-07-18 20:58:30] INFO - file: tracker_client_thread.c, line: 1263, tracker server 192.168.1.100:22122, set tracker leader: 192.168.1.100:22122
-[2018-07-18 22:32:25] INFO - file: fdfs_storaged.c, line: 526, catch signal 1, rotate log
-[2018-07-18 22:32:25] CRIT - file: fdfs_storaged.c, line: 474, catch signal 15, program exiting...
-[2018-07-18 22:32:25] INFO - exit normally.
-
-[2018-07-19 22:15:37] INFO - FastDFS v5.12, base_path=/home/Golang/src/AiJia/fdfs/storage, store_path_count=1, subdir_count_per_path=256, group_name=group1, run_by_group=, run_by_user=, connect_timeout=10s, network_timeout=60s, port=23000, bind_addr=, client_bind=1, max_connections=1024, accept_threads=1, work_threads=4, disk_rw_separated=1, disk_reader_threads=1, disk_writer_threads=1, buff_size=256 KB, heart_beat_interval=30s, stat_report_interval=60s, tracker_server_count=1, sync_wait_msec=50ms, sync_interval=0ms, sync_start_time=00:00, sync_end_time=23:59, write_mark_file_freq=500, allow_ip_count=-1, file_distribute_path_mode=0, file_distribute_rotate_count=100, fsync_after_written_bytes=0, sync_log_buff_interval=10s, sync_binlog_buff_interval=10s, sync_stat_file_interval=300s, thread_stack_size=512 KB, upload_priority=10, if_alias_prefix=, check_file_duplicate=0, file_signature_method=hash, FDHT group count=0, FDHT server count=0, FDHT key_namespace=, FDHT keep_alive=0, HTTP server port=8888, domain name=, use_access_log=0, rotate_access_log=0, access_log_rotate_time=00:00, rotate_error_log=0, error_log_rotate_time=00:00, rotate_access_log_size=0, rotate_error_log_size=0, log_file_keep_days=0, file_sync_skip_invalid_record=0, use_connection_pool=0, g_connection_pool_max_idle_time=3600s
-[2018-07-19 22:15:53] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:16:09] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:16:25] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:16:41] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:16:57] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:17:13] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:17:30] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:17:45] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:18:00] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:18:16] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:18:31] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:18:46] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:19:02] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:19:17] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:19:32] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:19:49] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:20:04] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:20:19] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:20:34] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:20:49] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:21:05] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:21:20] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:21:35] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:21:50] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:22:06] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:22:21] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:22:37] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:22:52] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:23:07] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:23:23] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:23:38] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:23:53] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:24:08] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:24:25] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:24:40] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:24:55] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:25:10] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:25:25] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:25:41] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:25:56] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:26:12] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:26:27] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:26:43] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:26:59] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:27:18] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:27:34] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:27:50] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:28:05] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:28:21] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:28:37] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:28:52] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:29:08] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:29:23] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:29:39] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:29:54] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:30:09] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:30:25] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:30:40] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:30:55] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:31:12] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:31:27] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:31:43] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:31:58] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:32:14] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:32:30] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:32:46] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:33:01] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:33:16] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:33:31] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:33:46] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:34:01] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:34:17] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:34:32] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:34:48] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:35:03] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:35:18] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:35:34] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:35:49] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:36:05] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:36:21] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:36:36] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:36:52] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:37:07] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:37:23] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:37:38] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:37:53] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:38:08] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:38:23] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:38:38] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:38:53] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:39:08] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:39:24] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:39:39] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:39:55] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:40:10] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:40:25] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:40:40] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:40:56] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:41:11] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:41:26] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:41:41] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:41:56] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:42:12] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:42:27] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:42:42] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:42:57] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:43:12] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:43:28] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:43:43] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:43:58] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:44:13] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:44:28] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:44:44] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:45:00] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:45:15] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:45:31] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:45:49] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:46:05] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:46:20] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:46:37] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:46:53] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:47:09] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:47:24] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:47:40] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:47:55] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:48:14] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:48:33] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:48:49] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:49:04] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:49:20] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:49:35] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:49:50] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:50:05] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:50:20] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:50:35] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:50:50] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:51:06] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:51:21] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:51:36] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:51:52] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:52:07] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:52:22] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:52:37] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:52:52] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:53:08] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:53:23] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:53:38] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:53:54] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:54:11] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:54:26] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:54:41] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:54:57] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:55:13] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:55:29] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-19 22:55:56] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 22:56:20] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 22:56:45] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 22:57:09] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 22:57:33] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 22:57:57] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 22:58:21] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 22:58:45] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 22:59:10] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 22:59:34] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 22:59:58] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:00:22] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:00:46] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:01:11] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:01:35] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:01:59] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:02:23] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:02:47] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:03:12] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:03:36] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:04:00] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:04:24] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:04:48] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:05:13] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:05:37] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:06:01] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:06:25] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:06:49] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:07:14] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:07:38] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:08:02] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:08:26] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:08:50] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:09:14] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:09:39] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:10:03] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:10:27] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:10:51] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:11:15] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:11:40] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:12:04] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:12:28] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:12:52] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:13:16] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:13:41] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:14:05] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:14:29] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:14:53] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:15:17] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:15:42] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:16:06] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:16:30] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:16:54] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:17:18] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:17:43] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:18:07] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:18:31] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:18:55] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:19:19] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:19:43] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:20:08] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:20:32] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:20:56] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:21:20] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:21:44] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:22:09] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:22:33] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:22:57] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:23:21] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:23:45] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:24:10] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:24:34] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:24:58] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:25:22] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:25:46] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:26:11] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:26:35] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:26:59] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:27:23] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:27:47] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:28:12] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:28:36] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:29:00] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:29:24] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:29:48] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:30:12] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-19 23:30:37] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 113, error info: No route to host
-[2018-07-20 20:19:15] INFO - FastDFS v5.12, base_path=/home/Golang/src/AiJia/fdfs/storage, store_path_count=1, subdir_count_per_path=256, group_name=group1, run_by_group=, run_by_user=, connect_timeout=10s, network_timeout=60s, port=23000, bind_addr=, client_bind=1, max_connections=1024, accept_threads=1, work_threads=4, disk_rw_separated=1, disk_reader_threads=1, disk_writer_threads=1, buff_size=256 KB, heart_beat_interval=30s, stat_report_interval=60s, tracker_server_count=1, sync_wait_msec=50ms, sync_interval=0ms, sync_start_time=00:00, sync_end_time=23:59, write_mark_file_freq=500, allow_ip_count=-1, file_distribute_path_mode=0, file_distribute_rotate_count=100, fsync_after_written_bytes=0, sync_log_buff_interval=10s, sync_binlog_buff_interval=10s, sync_stat_file_interval=300s, thread_stack_size=512 KB, upload_priority=10, if_alias_prefix=, check_file_duplicate=0, file_signature_method=hash, FDHT group count=0, FDHT server count=0, FDHT key_namespace=, FDHT keep_alive=0, HTTP server port=8888, domain name=, use_access_log=0, rotate_access_log=0, access_log_rotate_time=00:00, rotate_error_log=0, error_log_rotate_time=00:00, rotate_access_log_size=0, rotate_error_log_size=0, log_file_keep_days=0, file_sync_skip_invalid_record=0, use_connection_pool=0, g_connection_pool_max_idle_time=3600s
-[2018-07-20 20:20:00] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 110, error info: Connection timed out
-[2018-07-20 20:20:45] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 110, error info: Connection timed out
-[2018-07-20 20:21:30] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 110, error info: Connection timed out
-[2018-07-20 20:22:15] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 110, error info: Connection timed out
-[2018-07-20 20:23:00] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 110, error info: Connection timed out
-[2018-07-20 20:23:45] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 110, error info: Connection timed out
-[2018-07-20 20:24:30] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 110, error info: Connection timed out
-[2018-07-20 20:25:15] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 110, error info: Connection timed out
-[2018-07-20 20:26:00] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 110, error info: Connection timed out
-[2018-07-20 20:26:33] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-20 20:26:49] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 111, error info: Connection refused
-[2018-07-20 20:27:34] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 110, error info: Connection timed out
-[2018-07-20 20:28:19] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 110, error info: Connection timed out
-[2018-07-20 20:29:04] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 110, error info: Connection timed out
-[2018-07-20 20:29:49] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 110, error info: Connection timed out
-[2018-07-20 20:30:34] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 110, error info: Connection timed out
-[2018-07-20 20:31:19] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 110, error info: Connection timed out
-[2018-07-20 20:32:04] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 110, error info: Connection timed out
-[2018-07-20 20:32:49] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 110, error info: Connection timed out
-[2018-07-20 20:33:34] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 110, error info: Connection timed out
-[2018-07-20 20:34:19] ERROR - file: storage_ip_changed_dealer.c, line: 186, connect to tracker server 192.168.1.100:22122 fail, errno: 110, error info: Connection timed out
-[2018-07-20 20:36:11] ERROR - file: storage_func.c, line: 1194, conf file "/home/Golang/src/AiJia/conf/storage.conf", tracker: "127.0.0.1:22122" is invalid, tracker server ip can't be 127.0.0.1
-[2018-07-20 20:36:11] CRIT - exit abnormally!
-
-[2018-07-20 20:36:40] ERROR - file: storage_func.c, line: 1194, conf file "/home/Golang/src/AiJia/conf/storage.conf", tracker: "127.0.0.1:22122" is invalid, tracker server ip can't be 127.0.0.1
-[2018-07-20 20:36:40] CRIT - exit abnormally!
-
-[2018-07-20 20:38:30] ERROR - file: storage_func.c, line: 1194, conf file "/home/Golang/src/AiJia/conf/storage.conf", tracker: "127.0.0.1:22122" is invalid, tracker server ip can't be 127.0.0.1
-[2018-07-20 20:38:30] CRIT - exit abnormally!
-
-[2018-07-20 21:05:39] INFO - FastDFS v5.12, base_path=/home/Golang/src/AiJia/fdfs/storage, store_path_count=1, subdir_count_per_path=256, group_name=group1, run_by_group=, run_by_user=, connect_timeout=10s, network_timeout=60s, port=23000, bind_addr=192.168.1.102, client_bind=1, max_connections=1024, accept_threads=1, work_threads=4, disk_rw_separated=1, disk_reader_threads=1, disk_writer_threads=1, buff_size=256 KB, heart_beat_interval=30s, stat_report_interval=60s, tracker_server_count=1, sync_wait_msec=50ms, sync_interval=0ms, sync_start_time=00:00, sync_end_time=23:59, write_mark_file_freq=500, allow_ip_count=-1, file_distribute_path_mode=0, file_distribute_rotate_count=100, fsync_after_written_bytes=0, sync_log_buff_interval=10s, sync_binlog_buff_interval=10s, sync_stat_file_interval=300s, thread_stack_size=512 KB, upload_priority=10, if_alias_prefix=, check_file_duplicate=0, file_signature_method=hash, FDHT group count=0, FDHT server count=0, FDHT key_namespace=, FDHT keep_alive=0, HTTP server port=8888, domain name=, use_access_log=0, rotate_access_log=0, access_log_rotate_time=00:00, rotate_error_log=0, error_log_rotate_time=00:00, rotate_access_log_size=0, rotate_error_log_size=0, log_file_keep_days=0, file_sync_skip_invalid_record=0, use_connection_pool=0, g_connection_pool_max_idle_time=3600s
-[2018-07-20 21:05:39] INFO - file: storage_param_getter.c, line: 191, use_storage_id=0, id_type_in_filename=ip, storage_ip_changed_auto_adjust=1, store_path=0, reserved_storage_space=10.00%, use_trunk_file=0, slot_min_size=256, slot_max_size=16 MB, trunk_file_size=64 MB, trunk_create_file_advance=0, trunk_create_file_time_base=02:00, trunk_create_file_interval=86400, trunk_create_file_space_threshold=20 GB, trunk_init_check_occupying=0, trunk_init_reload_from_binlog=0, trunk_compress_binlog_min_interval=0, store_slave_file_use_link=0
-[2018-07-20 21:05:39] INFO - file: storage_func.c, line: 257, tracker_client_ip: 192.168.1.102, my_server_id_str: 192.168.1.102, g_server_id_in_filename: 1711384768
-[2018-07-20 21:05:39] INFO - file: tracker_client_thread.c, line: 310, successfully connect to tracker server 192.168.1.102:22122, as a tracker client, my ip is 192.168.1.102
-[2018-07-20 21:06:10] INFO - file: tracker_client_thread.c, line: 1263, tracker server 192.168.1.102:22122, set tracker leader: 192.168.1.102:22122
-[2018-07-20 21:07:59] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:07:59] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:07:59] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:07:59] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:07:59] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:07:59] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:07:59] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:07:59] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:07:59] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:09:29] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:09:29] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:09:29] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:09:29] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:09:29] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:09:29] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:09:29] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:09:29] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:09:29] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:12:18] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:12:18] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:12:18] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:12:18] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:12:18] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:12:18] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:12:18] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:12:18] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:12:18] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:21:46] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:21:46] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:21:46] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:21:46] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:21:46] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:21:46] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:21:46] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:21:46] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 21:21:46] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:16:15] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:16:15] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:16:15] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:16:15] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:16:15] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:16:15] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:16:15] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:16:15] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:16:15] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:39:21] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:39:21] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:39:21] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:39:21] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:39:21] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:39:21] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:39:21] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:39:21] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:39:21] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:46:27] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:46:27] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:46:27] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:46:27] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:46:27] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:46:27] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:46:27] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:46:27] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:46:27] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:50:58] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:50:58] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:50:58] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:50:58] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:50:58] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:50:58] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:50:58] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:50:58] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-20 23:50:58] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:01:21] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:01:21] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:01:21] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:01:21] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:01:21] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:01:21] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:01:21] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:01:21] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:01:21] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:04:26] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:04:26] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:04:26] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:04:26] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:04:26] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:04:26] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:04:26] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:04:26] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:07:04] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:07:04] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:07:04] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:07:04] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:07:04] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:07:04] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:07:04] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:07:04] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:07:04] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:10:56] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:10:56] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:10:56] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:10:56] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:10:56] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:10:56] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:10:56] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:10:56] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 00:10:56] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.102, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:18:04] INFO - FastDFS v5.12, base_path=/home/Golang/src/AiJia/fdfs/storage, store_path_count=1, subdir_count_per_path=256, group_name=group1, run_by_group=, run_by_user=, connect_timeout=10s, network_timeout=60s, port=23000, bind_addr=192.168.1.104, client_bind=1, max_connections=1024, accept_threads=1, work_threads=4, disk_rw_separated=1, disk_reader_threads=1, disk_writer_threads=1, buff_size=256 KB, heart_beat_interval=30s, stat_report_interval=60s, tracker_server_count=1, sync_wait_msec=50ms, sync_interval=0ms, sync_start_time=00:00, sync_end_time=23:59, write_mark_file_freq=500, allow_ip_count=-1, file_distribute_path_mode=0, file_distribute_rotate_count=100, fsync_after_written_bytes=0, sync_log_buff_interval=10s, sync_binlog_buff_interval=10s, sync_stat_file_interval=300s, thread_stack_size=512 KB, upload_priority=10, if_alias_prefix=, check_file_duplicate=0, file_signature_method=hash, FDHT group count=0, FDHT server count=0, FDHT key_namespace=, FDHT keep_alive=0, HTTP server port=8888, domain name=, use_access_log=0, rotate_access_log=0, access_log_rotate_time=00:00, rotate_error_log=0, error_log_rotate_time=00:00, rotate_access_log_size=0, rotate_error_log_size=0, log_file_keep_days=0, file_sync_skip_invalid_record=0, use_connection_pool=0, g_connection_pool_max_idle_time=3600s
-[2018-07-21 20:18:04] INFO - file: storage_param_getter.c, line: 191, use_storage_id=0, id_type_in_filename=ip, storage_ip_changed_auto_adjust=1, store_path=0, reserved_storage_space=10.00%, use_trunk_file=0, slot_min_size=256, slot_max_size=16 MB, trunk_file_size=64 MB, trunk_create_file_advance=0, trunk_create_file_time_base=02:00, trunk_create_file_interval=86400, trunk_create_file_space_threshold=20 GB, trunk_init_check_occupying=0, trunk_init_reload_from_binlog=0, trunk_compress_binlog_min_interval=0, store_slave_file_use_link=0
-[2018-07-21 20:18:04] INFO - file: storage_func.c, line: 257, tracker_client_ip: 192.168.1.104, my_server_id_str: 192.168.1.104, g_server_id_in_filename: 1744939200
-[2018-07-21 20:18:04] INFO - file: tracker_client_thread.c, line: 310, successfully connect to tracker server 192.168.1.104:22122, as a tracker client, my ip is 192.168.1.104
-[2018-07-21 20:18:35] INFO - file: tracker_client_thread.c, line: 1263, tracker server 192.168.1.104:22122, set tracker leader: 192.168.1.104:22122
-[2018-07-21 20:21:52] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:21:52] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:21:52] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:21:52] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:21:52] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:21:52] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:21:52] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:21:52] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:21:52] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:25:38] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:25:38] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:25:38] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:25:38] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:25:38] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:25:38] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:25:38] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:25:38] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:25:38] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:40:50] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:40:50] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:40:50] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:40:50] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:40:50] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:40:50] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:40:50] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:40:50] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:48:01] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:48:01] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:48:01] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:48:01] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:48:01] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:48:01] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:48:01] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:48:01] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:48:01] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:52:34] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:52:34] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:52:34] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:52:34] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:52:34] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:52:34] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:52:34] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:52:34] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:52:34] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:55:54] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:55:54] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:55:54] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:55:54] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:55:54] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:55:54] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:55:54] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:55:54] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
-[2018-07-21 20:55:54] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 22:39:20] INFO - file: storage_param_getter.c, line: 191, use_storage_id=0, id_type_in_filename=ip, storage_ip_changed_auto_adjust=1, store_path=0, reserved_storage_space=10.00%, use_trunk_file=0, slot_min_size=256, slot_max_size=16 MB, trunk_file_size=64 MB, trunk_create_file_advance=0, trunk_create_file_time_base=02:00, trunk_create_file_interval=86400, trunk_create_file_space_threshold=20 GB, trunk_init_check_occupying=0, trunk_init_reload_from_binlog=0, trunk_compress_binlog_min_interval=0, store_slave_file_use_link=0
+[2018-07-21 22:39:20] INFO - file: storage_func.c, line: 257, tracker_client_ip: 192.168.1.104, my_server_id_str: 192.168.1.104, g_server_id_in_filename: 1744939200
+[2018-07-21 22:39:21] INFO - file: tracker_client_thread.c, line: 310, successfully connect to tracker server 192.168.1.104:22122, as a tracker client, my ip is 192.168.1.104
+[2018-07-21 22:39:51] INFO - file: tracker_client_thread.c, line: 1263, tracker server 192.168.1.104:22122, set tracker leader: 192.168.1.104:22122
+[2018-07-21 22:40:47] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 22:40:47] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 22:40:47] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 22:40:47] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 22:40:47] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 22:40:47] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 22:40:47] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 22:40:47] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 22:50:04] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 22:50:04] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 22:50:04] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 22:50:04] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 22:50:04] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 22:50:04] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 22:50:04] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:02:19] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:02:19] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:02:19] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:02:19] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:02:19] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:02:19] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:02:19] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:02:19] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:02:19] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:04:16] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:04:16] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:07:27] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:07:27] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:07:27] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:07:27] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:07:27] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:07:27] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:07:27] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:10:45] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:10:45] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:10:45] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:10:45] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:10:45] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:10:45] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:10:45] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:10:45] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:19:03] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:19:03] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:19:03] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:19:03] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:19:03] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:19:03] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:19:03] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:19:03] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-21 23:19:03] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 09:11:58] INFO - FastDFS v5.12, base_path=/home/Golang/src/AiJia/fdfs/storage, store_path_count=1, subdir_count_per_path=256, group_name=group1, run_by_group=, run_by_user=, connect_timeout=10s, network_timeout=60s, port=23000, bind_addr=192.168.1.104, client_bind=1, max_connections=1024, accept_threads=1, work_threads=4, disk_rw_separated=1, disk_reader_threads=1, disk_writer_threads=1, buff_size=256 KB, heart_beat_interval=30s, stat_report_interval=60s, tracker_server_count=1, sync_wait_msec=50ms, sync_interval=0ms, sync_start_time=00:00, sync_end_time=23:59, write_mark_file_freq=500, allow_ip_count=-1, file_distribute_path_mode=0, file_distribute_rotate_count=100, fsync_after_written_bytes=0, sync_log_buff_interval=10s, sync_binlog_buff_interval=10s, sync_stat_file_interval=300s, thread_stack_size=512 KB, upload_priority=10, if_alias_prefix=, check_file_duplicate=0, file_signature_method=hash, FDHT group count=0, FDHT server count=0, FDHT key_namespace=, FDHT keep_alive=0, HTTP server port=8888, domain name=, use_access_log=0, rotate_access_log=0, access_log_rotate_time=00:00, rotate_error_log=0, error_log_rotate_time=00:00, rotate_access_log_size=0, rotate_error_log_size=0, log_file_keep_days=0, file_sync_skip_invalid_record=0, use_connection_pool=0, g_connection_pool_max_idle_time=3600s
+[2018-07-22 09:11:58] INFO - file: storage_param_getter.c, line: 191, use_storage_id=0, id_type_in_filename=ip, storage_ip_changed_auto_adjust=1, store_path=0, reserved_storage_space=10.00%, use_trunk_file=0, slot_min_size=256, slot_max_size=16 MB, trunk_file_size=64 MB, trunk_create_file_advance=0, trunk_create_file_time_base=02:00, trunk_create_file_interval=86400, trunk_create_file_space_threshold=20 GB, trunk_init_check_occupying=0, trunk_init_reload_from_binlog=0, trunk_compress_binlog_min_interval=0, store_slave_file_use_link=0
+[2018-07-22 09:11:58] INFO - file: storage_func.c, line: 257, tracker_client_ip: 192.168.1.104, my_server_id_str: 192.168.1.104, g_server_id_in_filename: 1744939200
+[2018-07-22 09:11:58] INFO - file: tracker_client_thread.c, line: 310, successfully connect to tracker server 192.168.1.104:22122, as a tracker client, my ip is 192.168.1.104
+[2018-07-22 09:12:28] INFO - file: tracker_client_thread.c, line: 1263, tracker server 192.168.1.104:22122, set tracker leader: 192.168.1.104:22122
+[2018-07-22 09:56:05] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 09:56:05] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 09:56:05] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 09:56:05] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 09:56:05] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 09:56:05] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 09:56:05] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 09:56:05] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:00:46] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:00:46] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:00:46] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:00:46] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:00:46] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:00:46] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:00:46] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:00:46] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:00:46] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:15:45] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:15:45] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:15:45] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:15:45] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:15:45] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:15:45] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:15:45] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:15:45] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:15:45] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:17:24] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:17:24] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:17:24] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:17:24] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:17:24] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:17:24] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:17:24] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:17:24] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 10:17:24] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 11:06:49] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 11:06:49] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 11:06:49] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 11:06:49] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 11:06:49] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 11:06:49] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 11:09:15] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 11:09:15] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 11:09:15] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 11:09:15] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 11:09:15] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 11:09:15] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 11:09:15] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 11:09:15] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0
+[2018-07-22 11:09:15] ERROR - file: storage_nio.c, line: 282, client ip: 192.168.1.104, recv timeout, recv offset: 0, expect length: 0

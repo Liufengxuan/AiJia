@@ -46,8 +46,8 @@ func (this *UserController) Reg() {
 	beego.Info("reg success id:=",id)
 	resp["errno"]=0
 	resp["errmsg"]="注册成功"
-	this.SetSession("name",user)
-
+	this.SetSession("user",user)
+	this.SetSession("user_id",user.Id)
 	beego.Info("mobile =",resp["mobile"])
 	beego.Info("password =",resp["password"])
 	beego.Info("sms_code =",resp["sms_code"])
@@ -66,7 +66,6 @@ func (this *UserController) Postavatar(){
 		resp["errno"]=models.RECODE_SERVERERR
 		resp["errmsg"]="图片上传失败"
 	}
-	beego.Info("is ok") //-----------debug
 	//2 得到文件后缀
 	suffix:=path.Ext(fNamehead.Filename)//截取文件后缀名称//a.jpg.avi
 	fdfsClient,fdfsClientError:=fdfs_client.NewFdfsClient("conf/client.conf")
@@ -87,8 +86,11 @@ func (this *UserController) Postavatar(){
 	if err2!=nil{
 		resp["errno"]=models.RECODE_REQERR
 		resp["errmsg"]="图片没能上传成功2"
+		beego.Info("fdfsClient.UploadByBuffer err=",err2)
 		return
 	}
+	//
+
 	userId:=this.GetSession("user_id")
 	o:=orm.NewOrm()
 
@@ -99,26 +101,17 @@ func (this *UserController) Postavatar(){
 		resp["errmsg"]="图片没能上传成功3"
 		return
 	}
-
 	user.Avatar_url=uploadResponse.RemoteFileId
-	beego.Info("is ok0") //-----------debug
-
-	_,err4:=o.Update(&user)
-
-	if err4!=nil{
+	if _,err4:=o.Update(&user);err4!=nil{
+		beego.Info("头像设置失败",err4)
 		resp["errno"]=models.RECODE_REQERR
-		resp["errmsg"]="图片没能上传成功4"
-		beego.Info("is ok") //-----------debug
-
+		resp["errmsg"]="头像设置失败"
 		return
 	}
 
-	beego.Info("is ok0") //-----------debug
 
 	urlMap:=make(map[string]string)
-
-	urlMap["avatar_url"]="127.0.0.1:8080/"+uploadResponse.RemoteFileId
-	beego.Info(urlMap["data"]) //-----------debug
+	urlMap["avatar_url"]="http://127.0.0.1:8080/"+uploadResponse.RemoteFileId
 
 	resp["errno"]=models.RECODE_OK
 	resp["errmsg"]="图片上传成功"

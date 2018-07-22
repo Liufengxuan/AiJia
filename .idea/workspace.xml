@@ -2,14 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e63f5c73-2ffe-4394-ac86-588a7ced83e3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/models/fdfs.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AiJia" beforeDir="false" afterPath="$PROJECT_DIR$/AiJia" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/area.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/area.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/session.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/session.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage/data/.data_init_flag" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs/storage/data/.data_init_flag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage/data/.tracker_status" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage/data/fdfs_storaged.pid" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs/storage/data/fdfs_storaged.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage/data/storage_changelog.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage/data/storage_groups_new.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage/data/storage_servers_new.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage/data/storage_stat.dat" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs/storage/data/storage_stat.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage/data/storage_sync_timestamp.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage/data/sync/binlog.000" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs/storage/data/sync/binlog.000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage/logs/storaged.log" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs/storage/logs/storaged.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage/logs/trackerd.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZFtPPWyAFZBvAAAC3VoILog9008.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltR33WADB2aAADl1Qo0m2g87.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltR3lWAVHV_AAAAGZbblAU7428.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltR3nOALwjqAADl1Qo0m2g71.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltR3syAbfD1AADl1Qo0m2g30.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltR4a2AXA_zAADl1Qo0m2g70.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltR_IOAOpW7AADl1Qo0m2g67.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltR_fSAHaFxAADl1Qo0m2g91.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltR_fWAc9f4AADl1Qo0m2g68.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltSA5aAJs2GAAiTEENah2k69..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltSAeyANbVJAAiTEENah2k57..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltSB82AEDkvAAXPTwn4L3M42..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltSB8SAb_9NAAXPTwn4L3M12..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltSBEiARTHmAAiTEENah2k42..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltSBHuAV1qtAAiTEENah2k25..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltSBKWAQB8eAAiTEENah2k47..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltSB_iAKFrYAAXPTwn4L3M36..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltSBxWATeeFAAXPTwn4L3M03..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltSCFCANY37AAXPTwn4L3M28..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltSCGyAGB9jAAiTEENah2k58..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltSCMWAT2fRAAiTEENah2k12..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltSCVSAQItFAAiTEENah2k79..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBZltSCfiARY2JAAiTEENah2k38..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBaFtTJSOAPmAPAAiTEENah2k29..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBaFtTJgWANMOjAAiTEENah2k11..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBaFtTJpSAJwxtAAiTEENah2k81..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBaFtTK0WAUx7DAAiTEENah2k50..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBaFtTK4aAdu30AAiTEENah2k61..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBaFtTKQaABlaGAAGDvIdxQos91..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBaFtTKZWABepqACqrfwiHkA042..png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBaFtTKceAQAdmAAiTEENah2k53..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBaFtTKrGABULMAAiTEENah2k87..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBaFtTLFaALEhKACqrfwiHkA0617.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBaFtTLR2AcxhhAAiTEENah2k126.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBaFtTLV-AD5aNAAB4qzlmXOU076.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/storage_data/data/00/00/wKgBaFtTLiKADqToAAAS5w2kfLY36.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/tracker/data/.tracker_status" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs/tracker/data/.tracker_status" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/tracker/data/fdfs_trackerd.pid" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs/tracker/data/fdfs_trackerd.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/tracker/data/storage_changelog.dat" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs/tracker/data/storage_changelog.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/tracker/data/storage_servers_new.dat" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs/tracker/data/storage_servers_new.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fdfs/tracker/logs/trackerd.log" beforeDir="false" afterPath="$PROJECT_DIR$/fdfs/tracker/logs/trackerd.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,8 +85,8 @@
       <file leaf-file-name="session.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/session.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="126">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -46,10 +94,10 @@
       <file leaf-file-name="user.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/user.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+            <state relative-caret-position="414">
+              <caret line="86" column="42" lean-forward="true" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
               <folding>
-                <element signature="n#!!block;n#Reg#0" />
+                <element signature="e#21#169#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,8 +106,8 @@
       <file leaf-file-name="area.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/area.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+            <state relative-caret-position="1062">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
             </state>
           </provider>
         </entry>
@@ -67,8 +115,8 @@
       <file leaf-file-name="router.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routers/router.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="198">
+              <caret line="14" column="89" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -98,8 +146,8 @@
         <option value="$PROJECT_DIR$/controllers/area.go" />
         <option value="$PROJECT_DIR$/models/fdfs.go" />
         <option value="$PROJECT_DIR$/main.go" />
-        <option value="$PROJECT_DIR$/controllers/session.go" />
         <option value="$PROJECT_DIR$/routers/router.go" />
+        <option value="$PROJECT_DIR$/controllers/session.go" />
         <option value="$PROJECT_DIR$/controllers/user.go" />
       </list>
     </option>
@@ -114,8 +162,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="603" />
-    <option name="y" value="84" />
+    <option name="x" value="463" />
+    <option name="y" value="35" />
     <option name="width" value="1356" />
     <option name="height" value="995" />
   </component>
@@ -124,6 +172,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,7 +194,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -174,10 +222,10 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="867" y="74" width="1356" height="995" extended-state="0" />
+    <frame x="463" y="35" width="1356" height="995" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15905632" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16362253" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" weight="0.32930514" />
@@ -185,7 +233,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29099306" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29099306" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -205,7 +253,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -523,31 +571,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/area.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+        <state relative-caret-position="1062">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routers/router.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="198">
+          <caret line="14" column="89" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="89" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/session.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="126">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/user.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+        <state relative-caret-position="414">
+          <caret line="86" column="42" lean-forward="true" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
           <folding>
-            <element signature="n#!!block;n#Reg#0" />
+            <element signature="e#21#169#0" expanded="true" />
           </folding>
         </state>
       </provider>

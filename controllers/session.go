@@ -23,25 +23,27 @@ func (this *SessionController) GetSessionData() {
 
 
 
-	user:=models.User{}
+	//user:=models.User{}
 	//user.Name="wyj"
-	resp["errno"]=models.RECODE_DBERR
-	resp["errmsg"]=models.RecodeText(models.RECODE_DBERR)
-  	name:=this.GetSession("name")
-  	if name !=nil{
-		user=name.(models.User)
+
+  	user:=this.GetSession("user")
+  	beego.Info("name",user)
+  	if user !=nil{
 		resp["errno"]=models.RECODE_OK
 		resp["errmsg"]=models.RecodeText(models.RECODE_OK)
-		resp["data"]=user
+		resp["data"]=user.(models.User)
+		return
 		//this.DelSession("name")
 	}
+	resp["errno"]=models.RECODE_DBERR
+	resp["errmsg"]=models.RecodeText(models.RECODE_DBERR)
 
 
 }
 func (this *SessionController) DeleteSessionData(){
 	resp:=make(map[string]interface{})
 	defer this.RetData(resp)
-	this.DelSession("name")
+	this.DelSession("user")
 	resp["errno"]=models.RECODE_OK
 	resp["errmsg"]=models.RecodeText(models.RECODE_OK)
 }
@@ -77,8 +79,10 @@ func (this *SessionController)Login(){
 
 
 	//添加Session
-	this.SetSession("name",user)
+	this.SetSession("user",user)
  	this.SetSession("user_id",user.Id)//id留存   取后不删。
+
+
 
 
 	//返回json数据。
