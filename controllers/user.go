@@ -3,7 +3,6 @@ package controllers
 import (
 	"github.com/astaxie/beego"
 	"encoding/json"
-
 	"github.com/astaxie/beego/orm"
 	"AiJia/models"
 	"path"
@@ -54,7 +53,6 @@ func (this *UserController) Reg() {
 
 
 }
-
 
 
 
@@ -118,6 +116,115 @@ func (this *UserController) Postavatar(){
 	resp["data"]=urlMap
 
 
+
+
+}
+
+
+
+func (this *UserController) GetUserData(){
+	resp:=make(map[string]interface{})
+	defer this.RetData(resp)
+
+
+	user_id:=this.GetSession("user_id")
+
+	user:=models.User{Id:user_id.(int)}
+	o:=orm.NewOrm()
+	err3:=o.Read(&user)
+	if err3 !=nil{
+		resp["errno"]=models.RECODE_DBERR
+		resp["errmsg"]=models.RecodeText(models.RECODE_DBERR)
+		beego.Error("GetUserData() o.read is error",err3)
+	}
+	resp["data"]=user
+	resp["errno"]=models.RECODE_OK
+	resp["errmsg"]=models.RecodeText(models.RECODE_OK)
+}
+
+
+
+func (this *UserController) UpdateName(){
+	resp:=make(map[string]interface{})
+	defer this.RetData(resp)
+
+
+	user_id:=this.GetSession("user_id")
+	beego.Info("id is ",user_id)
+	UserName:=make(map[string]string)
+	json.Unmarshal(this.Ctx.Input.RequestBody,&UserName)
+	user:=models.User{Id:user_id.(int)}
+	user.Name=UserName["name"]
+	beego.Info("update info is :",user)
+
+	o:=orm.NewOrm()
+	if _,err:= o.Update(&user,"Name");err!=nil{
+		resp["errno"]=models.RECODE_DBERR
+		resp["errmsg"]="修改用户名失败"
+		return
+	}
+	if err2:=o.Read(&user);err2!=nil{
+		resp["errno"]=models.RECODE_DBERR
+		resp["errmsg"]="修改用户名失败"
+		return
+	}
+	this.SetSession("name",user.Name)
+	this.SetSession("user",user)
+	resp["errno"]=models.RECODE_OK
+	resp["errmsg"]="修改成功"
+	resp["data"]=UserName
+}
+
+
+
+func (this *UserController)GetAuth(){
+	resp:=make(map[string]interface{})
+	defer this.RetData(resp)
+
+
+	user:=this.GetSession("user").(models.User)
+
+
+	o:=orm.NewOrm()
+	if err1:=o.Read(&user,"Id");err1!=nil{
+		resp["errno"]=models.RECODE_DBERR
+		resp["errmsg"]="未进行实名认证"
+		return
+	}
+
+	resp["data"]=user
+	resp["errno"]=models.RECODE_OK
+	resp["errmsg"]=models.RecodeText(models.RECODE_OK)
+	beego.Info("GetAuth()",resp)
+
+}
+
+
+
+
+func(this *UserController)SetAuth(){
+	resp:=make(map[string]interface{})
+	defer this.RetData(resp)
+
+	user:=this.GetSession("user").(models.User)
+	rqst:=make(map[string]string)
+	json.Unmarshal(this.Ctx.Input.RequestBody,&rqst)
+	user.Real_name=rqst["real_name"]
+	user.Id_card=rqst["id_card"]
+	//beego.Info(user)
+	o:=orm.NewOrm()
+	if _,err:=o.Update(&user,"real_name","id_card");err!=nil{
+		resp["errno"]=models.RECODE_DBERR
+		resp["errmsg"]="实名认证失败"
+		return
+	}
+
+
+
+	resp["errno"]=models.RECODE_OK
+	resp["errmsg"]="实名认证成功"
+	resp["data"]=user
+	this.SetSession("user",user)
 
 
 }

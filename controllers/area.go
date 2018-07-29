@@ -27,7 +27,7 @@ func (c *AreaController) GetArea() {
 	defer c.RetData(resp)
 	//从 redis缓存中取数据
 	//key:用来区分用的哪个redis ，conn：端口，dbnum：redis里面的0-25，
-	cache_conn,cache_connErr:=cache.NewCache("redis",`{"key":"redis1","conn":":6379","dbNum":"0","charset":"GBK"}`)
+	cache_conn,cache_connErr:=cache.NewCache("redis",`{"key":"redis1","conn":":6379","dbNum":"0"}`)
 	if cache_connErr!=nil{
 		beego.Error("cache.NewCache err=",cache_connErr)
 		return
